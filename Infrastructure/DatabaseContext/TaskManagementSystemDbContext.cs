@@ -32,7 +32,7 @@ namespace INFRASTRUCTURE.DatabaseContext
                 .HasOne(ut => ut.User)
                 .WithMany(ut => ut.Tasks)
                 .HasForeignKey(ut => ut.UserId)
-                .OnDelete(DeleteBehavior.Cascade)
+                .OnDelete(DeleteBehavior.Restrict)
                 .IsRequired();
 
             modelBuilder.Entity<UserTask>()
