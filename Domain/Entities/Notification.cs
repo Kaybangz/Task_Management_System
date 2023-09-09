@@ -8,6 +8,7 @@ namespace DOMAIN.Entities
     public class Notification
     {
         public Guid Id { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "A notification message is required")]
         public string Message { get; set; } = null!;
         public NotificationType Type { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
@@ -17,7 +18,7 @@ namespace DOMAIN.Entities
         public User? User { get; set; }
 
 
-        public virtual ICollection<Task>? Tasks { get; set; }
+        public virtual ICollection<UserTask>? Tasks { get; set; }
         public virtual ICollection<Project>? Projects { get; set; }
     }
 }

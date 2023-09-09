@@ -13,8 +13,8 @@ namespace DOMAIN.Entities
         [EmailAddress]
         public string Email { get; set; } = null!;
 
-        public virtual ICollection<Task>? Tasks { get; set; }
-
+        public virtual ICollection<UserTask>? Tasks { get; set; }
+        public virtual ICollection<Project>? Projects { get; set; }
         public virtual ICollection<Notification>? Notifications { get; set; }
     }
 }

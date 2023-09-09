@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DOMAIN.Entities
 {
-    public class Task
+    public class UserTask
     {
         [Key]
         public Guid Id { get; set; }
