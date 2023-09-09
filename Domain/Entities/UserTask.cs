@@ -19,7 +19,7 @@ namespace DOMAIN.Entities
         public Guid ProjectId { get; set; }
         public Project? Project { get; set; }
 
-        public Guid UserId { get; set; }
+        public string? UserId { get; set; }
         public User? User { get; set; }
 
         public virtual ICollection<Notification>? Notifications { get; set; }

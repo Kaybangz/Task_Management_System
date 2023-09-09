@@ -1,13 +1,15 @@
 ﻿using DOMAIN.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace INFRASTRUCTURE.DatabaseContext
 {
-    public class TaskManagementSystemDbContext : DbContext
+    public class TaskManagementSystemDbContext : IdentityDbContext<User>
     {
         public TaskManagementSystemDbContext(DbContextOptions options): base(options)
         {}
 
-        public DbSet<User> Users { get; set; }
+        
+
         public DbSet<UserTask> Tasks { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Notification> Notifications { get; set; }
@@ -17,9 +19,7 @@ namespace INFRASTRUCTURE.DatabaseContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            modelBuilder.Entity<User>()
-                .HasIndex(u => u.Email)
-                .IsUnique();
+            
 
             modelBuilder.Entity<Project>()
                 .HasOne(p => p.ProjectOwner)

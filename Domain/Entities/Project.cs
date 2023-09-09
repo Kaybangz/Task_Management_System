@@ -11,7 +11,7 @@ namespace DOMAIN.Entities
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
 
-        public Guid ProjectOwnerId { get; set; }
+        public string? ProjectOwnerId { get; set; }
         public User? ProjectOwner { get; set; }
         public virtual ICollection<UserTask>? Tasks { get; set; }
         public virtual ICollection<Notification>? Notifications { get; set; }
