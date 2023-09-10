@@ -12,6 +12,8 @@ namespace Presentation
             // Add services to the container.
 
             builder.Services.ConfigureSqlContext(builder.Configuration);
+            builder.Services.ConfigureJWT(builder.Configuration);
+            builder.Services.AddAuthorization();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -29,6 +31,7 @@ namespace Presentation
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRESENTATION", "Presentation\PRESENTATION.csproj", "{100BB900-1113-425C-A143-F3CFF5D8D49A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Presentation", "Presentation\TaskManagementSystem.Presentation.csproj", "{100BB900-1113-425C-A143-F3CFF5D8D49A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOMAIN", "Domain\DOMAIN.csproj", "{8F24BEC0-18EA-4565-9889-C8E8C38399DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Domain", "Domain\TaskManagementSystem.Domain.csproj", "{8F24BEC0-18EA-4565-9889-C8E8C38399DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INFRASTRUCTURE", "Infrastructure\INFRASTRUCTURE.csproj", "{40EB0791-FD21-4B8C-9B10-19E3C097B2BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Infrastructure", "Infrastructure\TaskManagementSystem.Infrastructure.csproj", "{40EB0791-FD21-4B8C-9B10-19E3C097B2BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPLICATION", "APPLICATION\APPLICATION.csproj", "{68FC033D-87A7-4308-B8CA-E539F91D7150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManagementSystem.Application", "APPLICATION\TaskManagementSystem.Application.csproj", "{68FC033D-87A7-4308-B8CA-E539F91D7150}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7CDC70AC-F494-4370-B563-C7B2EB2668C0}"
 	ProjectSection(SolutionItems) = preProject
